@@ -1,0 +1,50 @@
+:root {
+	--background-white: #ffffff;
+	--background-grey: #fafafa;
+	--gradient-one: #da3394;
+	--gradient-two: #e03c67;
+	--gradient-three: #f3753b;
+	--gradient-four: #f99b4a;
+	--font-color-primary: #262626;
+	--font-color-secondary: #8e8e8e;
+	--font-color-footer: #c7c7c7;
+	--border-color-grey: #dbdbdb;
+	--border-color-grey-secondary: #efefef;
+	--link-color: #0095f6;
+	--link-color-secondary: #b3dffc;
+	--font: "Montserrat", sans-serif;
+}
+
+body {
+	background-color: var(background-white);
+	font-family: var(font);
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	min-width: fit-content;
+}
+
+main {
+	background-color: var(background-grey);
+	margin-top: 60px;
+}
+
+main .container {
+	display: flex;
+	justify-content: left;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+a {
+	text-decoration: none;
+	color: var(link-color);
+	font-size: 0.9em;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+	main .container {
+		justify-content: center !important;
+	}
+}

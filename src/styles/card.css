@@ -1,0 +1,101 @@
+:root {
+	--background-white: #ffffff;
+	--background-grey: #fafafa;
+	--gradient-one: #da3394;
+	--gradient-two: #e03c67;
+	--gradient-three: #f3753b;
+	--gradient-four: #f99b4a;
+	--font-color-primary: #262626;
+	--font-color-secondary: #8e8e8e;
+	--font-color-footer: #c7c7c7;
+	--border-color-grey: #dbdbdb;
+	--border-color-grey-secondary: #efefef;
+	--link-color: #0095f6;
+	--link-color-secondary: #b3dffc;
+	--font: "Montserrat", sans-serif;
+}
+
+.card {
+	border: 1px solid var(border-color-grey);
+	background-color: var(background-white);
+	margin-bottom: 3.5em;
+	border-radius: 3px;
+}
+
+.card header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75em;
+}
+
+.card header .profile {
+	margin-bottom: 0;
+}
+
+.card header .cardButton {
+	height: 30px;
+}
+
+.card header .cardButton:hover {
+	cursor: pointer;
+}
+
+.card .cardImage {
+	width: 100%;
+	display: block;
+}
+
+.card .likedBy {
+	display: flex;
+	padding-left: 1em;
+}
+
+.card .likedBy span {
+	font-size: 0.75em;
+	margin-left: 0.5em;
+	padding-top: 0.5em;
+}
+
+.card .comments {
+	margin-bottom: 0.75em;
+}
+
+.card .timePosted {
+	font-size: 0.6em;
+	padding-left: 2em;
+	padding-bottom: 1em;
+	color: var(font-color-secondary);
+	border-bottom: 1px solid var(border-color-grey-secondary);
+}
+
+.card .addComment {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.85em;
+	padding: 1.5em 1.25em;
+}
+
+.card .addComment .commentText {
+	color: var(font-color-secondary);
+}
+
+.card .addComment .postText {
+	color: var(link-color-secondary);
+}
+
+@media only screen and (max-width: 640px) {
+	.card {
+		border: none;
+		background-color: var(background-grey);
+		margin-bottom: 0.75em;
+	}
+
+	.card .addComment {
+		display: none;
+	}
+
+	.card .timePosted {
+		border: none;
+	}
+}

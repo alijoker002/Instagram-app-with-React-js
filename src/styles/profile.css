@@ -1,0 +1,36 @@
+.profile {
+	display: flex;
+	align-items: center;
+	font-size: 0.8em;
+	margin-bottom: 0.85em;
+}
+
+.profile .textContainer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+	min-width: 180px;
+}
+
+.profile .textContainer .accountName {
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.profile .textContainer .accountName:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.profile .textContainer .caption {
+	color: #8e8e8e;
+}
+
+.profile .textContainer .caption.small {
+	font-size: 0.8em;
+}
+
+.profile a {
+	text-align: right;
+	width: 100%;
+}
